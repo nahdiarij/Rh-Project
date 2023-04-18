@@ -1,0 +1,59 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<aside class="sidebar">
+    <div class="toggle">
+      <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+    </div>
+    <div class="side-inner">
+  
+      <div class="profile">
+        <img [src]="url" alt="Image" class="img-fluid">
+        
+        <h3 class="name">Craig David</h3>
+        <span class="country">Web Designer</span>
+        <input type="file" (change)="onselectFile($event)">
+      </div>
+  
+      
+      <div class="nav-menu">
+        <ul>
+       
+          <li><a routerLink="/sammary"><span class="icon-home mr-3"></span>Sammary</a></li>
+           
+  
+         
+          <li class="accordion">
+            <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsible">
+              <span class="icon-search2 mr-3"></span>Forms
+            </a>
+  
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne">
+              <div>
+                <ul>
+                  <li><a routerLink="/conge">Congé</a></li>
+                  <li><a routerLink="/recla">Récalamation</a></li>
+                  <li><a routerLink="/auto">Autorisation</a></li>
+                  <li><a routerLink="/forma">Formation</a></li>
+                </ul>
+              </div>
+            </div>
+  
+          </li>
+          <li><a routerLink="/pay"><span class="icon-notifications mr-3"></span>Pay</a></li>
+        
+          
+          <li><a routerLink="/contact"><span class="icon-pie-chart mr-3"></span>Contacts</a></li>
+          <li><a href="#"><span class="icon-sign-out mr-3"></span>Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </aside>
+  <div id="content" class="p-5 p-md-5">
+    <router-outlet></router-outlet>
+  
+
+ 
+</div>
+  
